@@ -8,13 +8,15 @@ import Works from './components/works/Works'
 import Testimonials from './components/testimonials/Testimonials'
 import Contacts from './components/contacts/Contacts'
 import "./App.scss"
+import Menu from './components/menu/Menu'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <div className="App">
-     <Topbar/>
+     <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+     <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
      <div className="sections">
         <Intro/>
         <Portfolio/>
