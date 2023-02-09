@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+
 import './App.css'
 import Topbar from './components/top-bar/Topbar'
 import Intro from './components/intro/Intro'
