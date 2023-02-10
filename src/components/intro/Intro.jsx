@@ -1,4 +1,5 @@
 import "./Intro.scss"
+import "./slider/Slider.scss"
 import Slider from "./slider/Slider"
 export default function Intro(
     
@@ -29,8 +30,8 @@ export default function Intro(
           </div>
         </div>
 
-        <Slider/>
     </div>
+        <Slider/>
   </div>
   );
 }
