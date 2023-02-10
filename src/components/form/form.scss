@@ -1,0 +1,40 @@
+@import '../../global.scss';
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    padding:  1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: $maincolor;
+
+    label {
+        display: flex;
+        flex-direction: column;
+        // margin-bottom: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #333;
+    }
+
+    button {
+        margin-top: 1rem;
+        width: 80%;
+        align-self: center;
+        background-color: orange;
+        border-radius: 5px;
+        color: black;
+        font-size: 1rem;
+
+        &:hover {
+            background-color: #333;
+            transform: scale(1.1);
+            transition: ease-in-out 0.3s;
+            color: white;
+        }
+    }
+}

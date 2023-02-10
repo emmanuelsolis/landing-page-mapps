@@ -3,12 +3,14 @@ height: 100vh;
 background-color: #E9ECF4 ;
     .sections{
         width: 100%;
-        height: calc(100vh - 70px) ;
+        // height: calc(100vh - 70px) ;
+        height: auto;
         position: relative;
         top:70px;
+        scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         scrollbar-width: none;
-        scroll-behavior: smooth;
+        overflow: auto;
 
         &::-webkit-scrollbar{
             display: none;
@@ -16,8 +18,8 @@ background-color: #E9ECF4 ;
 
         >*{
             width: 100%;
-            height: calc(100vh - 70px) ;
-            scroll-snap-align: start;
+            // height: calc(100vh - 70px) ;
+            scroll-snap-align: none;
         }
     }
 
