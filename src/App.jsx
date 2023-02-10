@@ -9,6 +9,8 @@ import Testimonials from './components/testimonials/Testimonials'
 import Contacts from './components/contacts/Contacts'
 import "./App.scss"
 import Menu from './components/menu/Menu'
+import Questions from './components/questions/Questions'
+
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -23,7 +25,10 @@ function App() {
         <Works/>
         <Testimonials/>
         <Contacts/>
+        <Questions/>
+        
      </div>
+        
     </div>
   )
 }

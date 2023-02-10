@@ -1,9 +1,11 @@
 import "./Intro.scss"
+import Slider from "./slider/Slider"
 export default function Intro(
     
 ) {
   return (
     <div className='intro' id="intro">
+        
       <div className="container">
       <div className="left">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis amet, vitae maiores ea quibusdam cupiditate adipisci consectetur blanditiis numquam repellat qui in quia voluptatum fugiat tempore, cum iure unde nihil?</p>
@@ -19,6 +21,8 @@ export default function Intro(
         </div>
         </div>
         </div>
+
+        <Slider/>
     </div>
   )
 }
