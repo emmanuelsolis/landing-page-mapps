@@ -1,7 +1,19 @@
 import "./Topbar.scss"
-export default function Topbar({menuOpen,setMenuOpen}) {
+import { useState,useEffect } from 'react'
+ function Topbar({menuOpen,setMenuOpen, sticky, setSticky}) {
+
+  useEffect(() => {
+    const handleScroll = () => {
+     setSticky(window.scrollY > 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [])
   return (
-    <div className={'topbar ' + (menuOpen && 'active')}>
+    // <div className={'topbar ' + (menuOpen && 'active') + `${sticky ? 'sticky' : ""}` }>
+    <nav className={'topbar ' + (menuOpen && 'active') +`${sticky ? "sticky" : ""}`}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">Example</a>
@@ -15,6 +27,8 @@ export default function Topbar({menuOpen,setMenuOpen}) {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   )
 }
+
+export default Topbar
