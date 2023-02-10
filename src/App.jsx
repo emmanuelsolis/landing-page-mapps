@@ -10,6 +10,8 @@ import Contacts from './components/contacts/Contacts'
 import "./App.scss"
 import Menu from './components/menu/Menu'
 
+
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -23,7 +25,10 @@ function App() {
         <Works/>
         <Testimonials/>
         <Contacts/>
+        <Questions/>
+        
      </div>
+        
     </div>
   )
 }
