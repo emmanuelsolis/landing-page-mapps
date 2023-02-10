@@ -1,0 +1,80 @@
+.slider{
+position: relative;
+width: 95%;
+height: auto;
+// display: block;
+clear: both;
+box-sizing: border-box;
+margin:0;
+padding: 0;
+display: flex;
+align-items: center;
+background-color: white;
+border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+
+
+
+
+    .slide{
+        min-width: 100%;
+        height: 20vh;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .img
+{
+            width: 10%;
+            height: 60%;
+        }
+}
+    %btn-styles{
+        cursor: pointer;
+        background: rgba(0,0,0,0);
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 50%;
+        align-self: center;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        width: 5%;
+        height: 100%;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        &:hover        
+{
+            background: rgba(0, 0, 0, 0.356);
+
+        }
+    }
+
+    #left{
+        left: 0%;
+        @extend %btn-styles;
+        }
+    #right{
+        right: 0%;
+        @extend %btn-styles;
+    }
+    
+}
