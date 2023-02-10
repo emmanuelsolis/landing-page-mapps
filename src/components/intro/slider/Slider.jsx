@@ -33,7 +33,9 @@ function Slider() {
    x === -100*(sliderArr.length-1)? setX(0) : setX(x-100);
   }
     return (
-    <div className="slider">{
+    <div className="slider">
+      
+      {
         sliderArr.map((item,index)=>{
             return(
                 <div key={index} className="slide" style={{transform: `translateX(${x}%)`}}>
