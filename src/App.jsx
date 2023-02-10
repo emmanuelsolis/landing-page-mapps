@@ -9,6 +9,8 @@ import Contacts from './components/contacts/Contacts'
 import "./App.css"
 import "./App.scss"
 
+import Questions from './components/questions/Questions'
+
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,7 +27,10 @@ function App() {
         <Works/>
         <Testimonials/>
         <Contacts/>
+        <Questions/>
+        
      </div>
+        
     </div>
   )
 }

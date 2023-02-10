@@ -1,9 +1,12 @@
-import "./Intro.scss";
-export default function Intro() {
-
+import "./Intro.scss"
+import Slider from "./slider/Slider"
+export default function Intro(
+    
+) {
   return (
-    <div className="intro" id="intro">
-     
+    <div className='intro' id="intro">
+        
+
       <div className="container">
         <div className="left">
           <p>
@@ -25,7 +28,9 @@ export default function Intro() {
             <img src="../../../public/assets/images/cam.jpg" alt="" />
           </div>
         </div>
-      </div>
+
+        <Slider/>
     </div>
+  </div>
   );
 }
