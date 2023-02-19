@@ -12,6 +12,8 @@ import "./App.scss"
 import Questions from './components/questions/Questions'
 
 
+
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
