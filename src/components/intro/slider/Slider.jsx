@@ -43,8 +43,8 @@ function Slider() {
                 </div>
             )
         })}
-        <button id="left" onClick={left}>IZQ</button>
-        <button id="right" onClick={right}>DER</button>
+        <button id="left" onClick={left}><strong>&lt;</strong></button>
+        <button id="right" onClick={right}><strong>&#62;</strong></button>
         </div>
   )
 }

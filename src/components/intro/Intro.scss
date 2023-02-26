@@ -1,7 +1,6 @@
 .intro{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
   
     .container{
@@ -9,20 +8,16 @@
         height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
         align-items: center;
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
         background-color: white;
         .left{
             padding: 4%;
-            flex: 0.5;
+            // flex: 0.5;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            align-items: flex-start;
+            // right: -35%;
+            // justify-content: ;
             text-align: center;
             >*{
                 margin:5% 0;
@@ -35,21 +30,23 @@
         .right{
             flex:0.5;
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            // align-items: flex-end;
+            // left: -35%;
             text-align: center;
            
             position: relative;
             .imgContainer{
-                width: 100%;
-                height: 100%;
+                width: 40%;
+                height: auto;
+                margin-left: 5%;
                 overflow: hidden;
                 display: flex;
                 justify-content: center;
                 
                 img{
-                    
-                    height: 80%;
-                    width: auto;
+                    object-fit: cover;
                 }
             }
         }

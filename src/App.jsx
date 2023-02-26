@@ -7,7 +7,7 @@ import Works from './components/works/Works'
 import Testimonials from './components/testimonials/Testimonials'
 import Contacts from './components/contacts/Contacts'
 import "./App.css"
-import "./App.scss"
+
 
 import Questions from './components/questions/Questions'
 
