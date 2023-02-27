@@ -1,6 +1,9 @@
 
 .works{
-    background-color: brown;
+    background-image: url("/public/assets/images/cover.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
 
     .top{
         display: flex;
